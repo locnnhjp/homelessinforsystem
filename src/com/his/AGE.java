@@ -7,7 +7,7 @@ package com.his;
 
 /**
  *
- * @author nguyenngohoangloc
+ * @author anonymous
  */
 public enum AGE {
     Category1(55, 54),
