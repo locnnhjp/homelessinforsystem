@@ -15,8 +15,8 @@ public enum AGE {
     Category3(60, 64),
     Category4(65, 200);
     
-    private int MIN_AGE;
-    private int MAX_AGE;
+    private final int MIN_AGE;
+    private final int MAX_AGE;
     
     private AGE(int minAge, int maxAge) {
         this.MIN_AGE = minAge;

@@ -15,8 +15,8 @@ public enum WEEKLY_INCOME {
     Category3(400, 599),
     Category4(600, 999);
     
-    private int minIncome;
-    private int maxIncome;
+    private final int minIncome;
+    private final int maxIncome;
     
     private WEEKLY_INCOME(int minIncome, int maxIncome) {
         this.minIncome = minIncome;
