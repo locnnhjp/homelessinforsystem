@@ -10,19 +10,24 @@ package com.his;
  * @author anonymous
  */
 public enum AGE {
-    Category1(55, 54),
-    Category2(55, 59),
-    Category3(60, 64),
-    Category4(65, 200);
+    Category1("50-54", 50, 54),
+    Category2("55-59", 55, 59),
+    Category3("60-64", 60, 64),
+    Category4("Over 65", 65, 200);
     
+    private final String AGE_STRING;
     private final int MIN_AGE;
     private final int MAX_AGE;
     
-    private AGE(int minAge, int maxAge) {
+    private AGE(String ageString, int minAge, int maxAge) {
+        this.AGE_STRING = ageString;
         this.MIN_AGE = minAge;
         this.MAX_AGE = maxAge;
     }
     
+    public String getAgeString() {
+        return this.AGE_STRING;
+    }
     public int getMIN_AGE() {
         return this.MIN_AGE;
     }
