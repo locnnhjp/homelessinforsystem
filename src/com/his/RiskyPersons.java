@@ -47,4 +47,17 @@ public class RiskyPersons {
         return "";
         // TODO: Implement toString method
     }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof RiskyPersons) {
+            RiskyPersons other = (RiskyPersons)obj;
+            return this.SA3Category.getLocation().getName().equals(other.SA3Category.getLocation().getName())
+                    && this.SA3Category.getWeeklyIncome().toString().equals(other.SA3Category.getWeeklyIncome().toString())
+                    && this.SA3Category.getIncomeSource().equals(other.SA3Category.getIncomeSource())
+                    && this.SA3Category.getAge().toString().equals(other.SA3Category.getAge().toString())
+                    && this.SA3Category.getGender().toString().equals(other.SA3Category.getGender().toString());
+        }
+        return false;
+    }
 }

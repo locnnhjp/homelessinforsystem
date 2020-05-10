@@ -35,4 +35,9 @@ public enum AGE {
     public int getMAX_AGE() {
         return this.MAX_AGE;
     }
+    
+    @Override
+    public String toString() {
+        return AGE_STRING;
+    }
 }

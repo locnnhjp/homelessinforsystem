@@ -36,4 +36,9 @@ public enum WEEKLY_INCOME {
     public int getMaxIncome() {
         return this.maxIncome;
     }
+    
+    @Override
+    public String toString() {
+        return this.incomeString;
+    }
 }
